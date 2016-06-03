@@ -41,6 +41,46 @@ namespace COMP123_S2016_Assignment1
                 this._name = value;
             }
         }
+
+        public int Strength
+        {
+            get
+            {
+                return this._strength;
+            }
+            set
+            {
+                this._strength = value;
+            }
+        }
+
+        public int Speed
+        {
+            get
+            {
+                return this._speed;
+            }
+            set
+            {
+                this._speed = value;
+            }
+        }
+
+        public int Health
+        {
+            get
+            {
+                return this._health;
+            }
+            set
+            {
+                this._health = value;
+            }
+        }
+
+
+
+
         // ++++++++++++++++++++++ CONSTRUCTORS +++++++++++++++++++++++++++++++++++++++++
 
         // ++++++++++++++++++++++ PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++
