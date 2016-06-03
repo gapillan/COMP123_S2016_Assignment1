@@ -30,17 +30,28 @@ namespace COMP123_S2016_Assignment1
 
         static void Main(string[] args)
         {
-         // create instance of the Hero class 
-            Hero Saitama = new Hero("Master Saitama ");
+
+            Console.WriteLine("          Hero Class - Assignment 1 "); 
+
+         // create instance of the true Hero Saitama class 
+            Hero Saitama = new Hero(" Saitama ");
             Console.WriteLine();
             Saitama.Strength = 110;
             Saitama.Speed = 110;
             Saitama.Health = 100; 
 
             Saitama.Show();
+            Saitama.Fight(true);
 
-            Saitama.Fight();
+            // create instance of the false Hero Saitama class
+            Hero Genos = new Hero(" Genos");
+            Console.WriteLine();
+            Genos.Strength = 80;
+            Genos.Speed = 90;
+            Genos.Health = 100;
 
+            Genos.Show();
+            Genos.Fight(false);
         }
     }
 }

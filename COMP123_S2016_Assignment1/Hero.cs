@@ -159,10 +159,24 @@ namespace COMP123_S2016_Assignment1
          * @method Fight() 
          * @returns {void} 
          */
-        public void Fight()
+        public void Fight(bool hitAttempt)
         {
-            if (hitAttempt == true) 
-                this._hitDamage(2);
+                int onePunch = Strength * 2;
+                int failPunch = this.Health - onePunch;
+
+            if (hitAttempt == true)
+            {
+                Console.WriteLine("**** Hit attemped. Show all abilities now ****");
+                Console.WriteLine("     Damaged by {0}, Remaining Health {1}", onePunch * 2, failPunch);
+            }
+            else 
+            {
+                Console.WriteLine("**** DAMAGED ALERT. Show all abilities now ***");
+                Console.WriteLine("**********************************************");
+                Console.WriteLine("      Health: {0}, Strength: {1}, Speed: {2} ", this.Health, this.Strength, this.Speed);
+                Console.WriteLine();
+            }
+             
         }
 
         /**
@@ -176,13 +190,18 @@ namespace COMP123_S2016_Assignment1
          */
         private void _hitAttempt(bool hitAttempt) 
         {
-            if (hitAttempt == true)
+            int onePunch = Strength * 2;
+
+            if (hitAttempt)
             {
-                hitAttempt = true;
+                Console.WriteLine("");
+                Console.WriteLine(" Man Down by {0},  Life Source {1} ", onePunch * 2, this.Health);
             }
-            else 
+            else
             {
-                this._hitAttempt(false);
+                Console.WriteLine("*** Hit attemped. Show all abilities now ***");
+                Console.WriteLine("  Health: {0}, Strength: {1}, Speed: {2} ", this.Health, this.Strength, this.Speed);
+                Console.WriteLine("--------------------------------------------------------");
             }
         }
 
@@ -198,15 +217,9 @@ namespace COMP123_S2016_Assignment1
          */
         private void _hitDamage(int hitDamage) 
         {
-            if (hitAttempt)
-            {
-                hitDamage = Strength *2;
-            }
-            else
-            {
-                this._hitDamage(5);
-            }
-            
+            int onePunch = Strength * 2;
+            Console.WriteLine(" Man Down by {0},  Life Source {1} ", onePunch * 5, this.Health - onePunch);
+            Console.WriteLine("-------------------------------------------------------------------------");
         }
 
         // ++++++++++++++++++++++ PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++
@@ -222,16 +235,12 @@ namespace COMP123_S2016_Assignment1
          */
         public void Show()
         {
-            Console.WriteLine(" Hero Class - Assignment 1 ");
-            Console.WriteLine();
-            Console.WriteLine("***************************");
-            Console.WriteLine("      " + this.Name);
-            Console.WriteLine("***************************");
-            Console.WriteLine("       Strength: " + this.Strength);
-            Console.WriteLine("        Speed: " + this.Speed);
-            Console.WriteLine("       Health: " + this.Health);
-            Console.WriteLine("***************************");
-        }        
-        
+            Console.WriteLine("                " + this.Name);
+            Console.WriteLine("**********************************************");
+            Console.WriteLine("               Strength: " + this.Strength);
+            Console.WriteLine("                Speed: " + this.Speed);
+            Console.WriteLine("               Health: " + this.Health);
+            Console.WriteLine("**********************************************");
+        }
     }
 }
