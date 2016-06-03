@@ -6,10 +6,24 @@ using System.Threading.Tasks;
 
 namespace COMP123_S2016_Assignment1
 {
+        /**
+        * This class is the "driver" class for the Program 
+        * 
+        * @class Program 
+        */
     class Program
     {
+        /**
+         * The main method of our driver class Program 
+         * 
+         * @method Main 
+         * @param {string[]} args
+         */
+
         static void Main(string[] args)
         {
+         
+
         }
     }
 }
