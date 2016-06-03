@@ -112,9 +112,26 @@ namespace COMP123_S2016_Assignment1
             this._name = Name;
         }
 
-        // ++++++++++++++++++++++ PRIVATE METHODS ++++++++++++++++++++++++++++++++++++++
+        // +++++++++++++++++++++ PRIVATE METHODS +++++++++++++++++++++++++++++++++++++++
 
-
+        /**
+         * <summary> 
+         * This method takes strength, speed and health parameters. 
+         * It assigns the local strenght value to the Strength property.
+         * It assigns the local speed value to the Speed property. 
+         * It assigns the local health value to the Health property.
+         * </summary>
+         * 
+         * @private 
+         * @method _generateAbilities 
+         * @returns {void}
+         */
+        private void _generateAbilities(int strength, int speed, int health) 
+        {
+            this.Strength = strength;
+            this.Speed = speed;
+            this.Health = health; 
+        }
 
         // ++++++++++++++++++++++ PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++
     }
