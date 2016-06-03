@@ -28,12 +28,12 @@ namespace COMP123_S2016_Assignment1
          * @param {string[]} args
          */
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
 
             Console.WriteLine("          Hero Class - Assignment 1 "); 
 
-         // create instance of the true Hero Saitama class 
+         // create instance of the Hero Saitama 
             Hero Saitama = new Hero(" Saitama ");
             Console.WriteLine();
             Saitama.Strength = 110;
@@ -43,7 +43,7 @@ namespace COMP123_S2016_Assignment1
             Saitama.Show();
             Saitama.Fight(true);
 
-            // create instance of the false Hero Saitama class
+            // create instance for Hero Genos
             Hero Genos = new Hero(" Genos");
             Console.WriteLine();
             Genos.Strength = 80;
@@ -52,6 +52,16 @@ namespace COMP123_S2016_Assignment1
 
             Genos.Show();
             Genos.Fight(false);
+
+           // generateAbilitiesToConsole();
+            
         }
+
+        //public static string generateAbilitiesToConsole() 
+        //{
+        //    string generateAbilitiesString = "";
+        //    Console.WriteLine(generateAbilitiesString);
+        //    return generateAbilitiesString;
+        //}
     }
 }
