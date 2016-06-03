@@ -22,8 +22,10 @@ namespace COMP123_S2016_Assignment1
 
         static void Main(string[] args)
         {
-         
+         // create instance of the Hero class 
 
+            Hero Saitama = new Hero("Master Saitama");
+            Saitama.Show();
         }
     }
 }
