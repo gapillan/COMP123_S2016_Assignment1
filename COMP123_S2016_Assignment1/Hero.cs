@@ -42,6 +42,12 @@ namespace COMP123_S2016_Assignment1
             }
         }
 
+        /**
+         * <summary>
+         * This is a public property for our private _strength field 
+         * </summary>
+         * @property {int} Strength
+         */
         public int Strength
         {
             get
@@ -54,6 +60,12 @@ namespace COMP123_S2016_Assignment1
             }
         }
 
+        /**
+         * <summary>
+         * This is a public property for our private _speed field 
+         * </summary>
+         * @property {int} Speed
+         */
         public int Speed
         {
             get
@@ -66,6 +78,12 @@ namespace COMP123_S2016_Assignment1
             }
         }
 
+        /**
+         * <summary>
+         * This is a public property for our private _health field 
+         * </summary>
+         * @property {int} Health
+         */
         public int Health
         {
             get
@@ -77,9 +95,6 @@ namespace COMP123_S2016_Assignment1
                 this._health = value;
             }
         }
-
-
-
 
         // ++++++++++++++++++++++ CONSTRUCTORS +++++++++++++++++++++++++++++++++++++++++
 
