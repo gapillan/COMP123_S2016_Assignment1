@@ -214,11 +214,15 @@ namespace COMP123_S2016_Assignment1
          */
         public void Show()
         {
-            Console.WriteLine("  " + this.Name);
-
-            Console.WriteLine(" Strength: " + this.Strength);
-            Console.WriteLine(" Speed: " + this.Speed);
-            Console.WriteLine(" Health: " + this.Health);
+            Console.WriteLine(" Hero Class - Assignment 1 ");
+            Console.WriteLine();
+            Console.WriteLine("***************************");
+            Console.WriteLine("      " + this.Name);
+            Console.WriteLine("***************************");
+            Console.WriteLine("       Strength: " + this.Strength);
+            Console.WriteLine("        Speed: " + this.Speed);
+            Console.WriteLine("       Health: " + this.Health);
+            Console.WriteLine("***************************");
         }        
         
     }
