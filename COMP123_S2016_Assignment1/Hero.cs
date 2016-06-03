@@ -161,7 +161,8 @@ namespace COMP123_S2016_Assignment1
          */
         public void Fight()
         {
-            if (hitAttempt == true) this._hitDamage(5);
+            if (hitAttempt == true) 
+                this._hitDamage(2);
         }
 
         /**
@@ -197,8 +198,15 @@ namespace COMP123_S2016_Assignment1
          */
         private void _hitDamage(int hitDamage) 
         {
-            hitDamage = Strength * 2;
-            this._hitDamage(5);
+            if (hitAttempt)
+            {
+                hitDamage = Strength *2;
+            }
+            else
+            {
+                this._hitDamage(5);
+            }
+            
         }
 
         // ++++++++++++++++++++++ PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++

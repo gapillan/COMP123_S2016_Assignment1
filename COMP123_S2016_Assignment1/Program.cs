@@ -33,11 +33,14 @@ namespace COMP123_S2016_Assignment1
          // create instance of the Hero class 
             Hero Saitama = new Hero("Master Saitama ");
             Console.WriteLine();
-            Saitama.Strength = 90;
-            Saitama.Speed = 80;
+            Saitama.Strength = 110;
+            Saitama.Speed = 110;
             Saitama.Health = 100; 
 
             Saitama.Show();
+
+            Saitama.Fight();
+
         }
     }
 }
