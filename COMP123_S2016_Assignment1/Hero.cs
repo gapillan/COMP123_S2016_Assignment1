@@ -95,6 +95,24 @@ namespace COMP123_S2016_Assignment1
                 this._health = value;
             }
         }
+        /**
+         * <summary>
+         * This is a public property for our public Fight field 
+         * </summary>
+         * 
+         * @property {bool} hitAttempt 
+         */
+        public bool hitAttempt 
+        {
+            get 
+            {
+                return hitAttempt;
+            }
+            set 
+            {
+                hitAttempt = value;
+            }
+        }
 
         // ++++++++++++++++++++++ CONSTRUCTORS +++++++++++++++++++++++++++++++++++++++++
 
@@ -135,6 +153,19 @@ namespace COMP123_S2016_Assignment1
 
         /**
          * <summary>
+         * This method output calls the private hitAttempt property.
+         * </summary> 
+         * 
+         * @method Fight() 
+         * @returns {void} 
+         */
+        public void Fight()
+        {
+            if (hitAttempt == true) this._hitDamage(5);
+        }
+
+        /**
+         * <summary>
          * This method will determine if the Hero hits 
          * </summary>
          * 
@@ -171,5 +202,8 @@ namespace COMP123_S2016_Assignment1
         }
 
         // ++++++++++++++++++++++ PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++
+
+        
+        
     }
 }
