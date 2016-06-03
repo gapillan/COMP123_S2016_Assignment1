@@ -133,6 +133,27 @@ namespace COMP123_S2016_Assignment1
             this.Health = health; 
         }
 
+        /**
+         * <summary>
+         * This method will determine if the Hero hits 
+         * </summary>
+         * 
+         * @private 
+         * @method _hitAttempt 
+         * @returns {void}
+         */
+        private void _hitAttempt(bool hitAttempt) 
+        {
+            if (hitAttempt == true)
+            {
+                hitAttempt = true;
+            }
+            else 
+            {
+                this._hitAttempt(false);
+            }
+        }
+
         // ++++++++++++++++++++++ PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++
     }
 }
