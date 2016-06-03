@@ -203,7 +203,23 @@ namespace COMP123_S2016_Assignment1
 
         // ++++++++++++++++++++++ PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++
 
-        
+        /**
+         * <summary> 
+         * This method outputs the _name, _strength, _speed, and _health values
+         * in the following. 
+         * </summary>
+         * 
+         * @method Show
+         * @returns {void} 
+         */
+        public void Show()
+        {
+            Console.WriteLine("  " + this.Name);
+
+            Console.WriteLine(" Strength: " + this.Strength);
+            Console.WriteLine(" Speed: " + this.Speed);
+            Console.WriteLine(" Health: " + this.Health);
+        }        
         
     }
 }
