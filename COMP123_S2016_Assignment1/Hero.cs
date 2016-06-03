@@ -154,6 +154,22 @@ namespace COMP123_S2016_Assignment1
             }
         }
 
+        /**
+         * <summary>
+         * This method calculates by multiplying the Hero's strength property 
+         * by a number between 1 and 6 
+         * </summary>
+         * 
+         * @private
+         * @method _hitDamage 
+         * @return void 
+         */
+        private void _hitDamage(int hitDamage) 
+        {
+            hitDamage = Strength * 2;
+            this._hitDamage(5);
+        }
+
         // ++++++++++++++++++++++ PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++
     }
 }
