@@ -97,10 +97,25 @@ namespace COMP123_S2016_Assignment1
         }
 
         // ++++++++++++++++++++++ CONSTRUCTORS +++++++++++++++++++++++++++++++++++++++++
+
+        /**
+         * <summary>
+         * This is a constructor that takes Hero as a parameter and passes 
+         * it to the _name private instance variable 
+         * </summary>
+         * 
+         * @contructor Hero
+         * @param {string} name
+         */
         public Hero(string Name) 
         {
             this._name = Name;
         }
+
+        // ++++++++++++++++++++++ PRIVATE METHODS ++++++++++++++++++++++++++++++++++++++
+
+
+
         // ++++++++++++++++++++++ PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++
     }
 }
