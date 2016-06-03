@@ -23,7 +23,24 @@ namespace COMP123_S2016_Assignment1
         private int _health; 
 
         // ++++++++++++++++++++++ PUBLIC PROPERTIES ++++++++++++++++++++++++++++++++++++
-
+        
+        /**
+         * <summary>
+         * This is a public property for our private _name field 
+         * </summary>
+         * @property {string} Name
+         */
+        public string Name 
+        {
+            get 
+            {
+                return this._name; 
+            }
+            set 
+            {
+                this._name = value;
+            }
+        }
         // ++++++++++++++++++++++ CONSTRUCTORS +++++++++++++++++++++++++++++++++++++++++
 
         // ++++++++++++++++++++++ PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++
