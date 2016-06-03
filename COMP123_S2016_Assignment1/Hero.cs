@@ -97,7 +97,10 @@ namespace COMP123_S2016_Assignment1
         }
 
         // ++++++++++++++++++++++ CONSTRUCTORS +++++++++++++++++++++++++++++++++++++++++
-
+        public Hero(string Name) 
+        {
+            this._name = Name;
+        }
         // ++++++++++++++++++++++ PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++
     }
 }
